@@ -97,7 +97,8 @@
         "overlap": "@displayable_configs#sw_overlap",
         "padding_mode": "replicate",
         "mode": "gaussian",
-        "device": "$torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')"
+        "sw_device":"$torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')",
+        "device": "cpu"
     },
     "postprocessing": {
         "_target_": "Compose",
